@@ -48,8 +48,7 @@ export default function HomePage() {
       <Header />
       <main>
         <section className="hero">
-          <p className="eyebrow">Digital projects, thoughtfully delivered</p>
-          <h1>Good work starts with a clear brief.</h1>
+          <h1>Good work starts with a clear brief</h1>
           <p className="lede">
             Tell us where you’re headed. We’ll get back to you with a considered
             next step.
@@ -97,10 +96,10 @@ export default function HomePage() {
                 required
               >
                 <option value="">Select a range</option>
-                <option>Under $1k</option>
-                <option>$1k–$5k</option>
-                <option>$5k–$10k</option>
-                <option>$10k+</option>
+                <option>Under ₹1,000</option>
+                <option>₹1,000–₹5,000</option>
+                <option>₹5,000–₹10,000</option>
+                <option>₹10,000+</option>
               </select>
             </label>
             <label>

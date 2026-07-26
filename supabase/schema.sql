@@ -2,7 +2,7 @@ create table public.leads (
   id bigint generated always as identity primary key,
   name text not null check (char_length(name) between 2 and 100),
   email text not null check (email ~ '^[^@[:space:]]+@[^@[:space:]]+\\.[^@[:space:]]+$'),
-  budget_range text not null check (budget_range in ('Under $1k', '$1k–$5k', '$5k–$10k', '$10k+')),
+  budget_range text not null check (budget_range in ('Under ₹1,000', '₹1,000–₹5,000', '₹5,000–₹10,000', '₹10,000+')),
   message text not null check (char_length(message) between 10 and 2000),
   status text not null default 'New' check (status in ('New', 'Contacted', 'Closed')),
   created_at timestamptz not null default now()
